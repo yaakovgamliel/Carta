@@ -20,7 +20,9 @@
     
     
 }
+@property(nonatomic, getter=isHidden) BOOL hidden;
 -(void)findLocation;
 -(void)foundLocation:(CLLocation *)loc;
-
+//small buttos 
+-(IBAction)setMaptype:(id)sender;
 @end

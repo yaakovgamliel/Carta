@@ -49,6 +49,9 @@
 //
 -(void)viewDidLoad
 {
+    [activityIndicator startAnimating];
+    //bronze challengue
+    [worldMap setMapType:MKMapTypeSatellite];
     [worldMap setShowsUserLocation:YES];
 }
 //
@@ -73,8 +76,8 @@ didUpdateUserLocation:(MKUserLocation *)userLocation
 }
 -(void)findLocation
 {
+   // [activityIndicator startAnimating];
     [locationManager startUpdatingLocation];
-    [activityIndicator startAnimating];
     [locationField setHidden:NO];
 }
 -(void)foundLocation:(CLLocation *)loc
@@ -88,12 +91,16 @@ didUpdateUserLocation:(MKUserLocation *)userLocation
     
     ///clean up!!
     [locationField setText:@""];
-    [activityIndicator stopAnimating];
     [locationField setHidden:NO];
     [locationManager stopUpdatingLocation];
     //debugging note
     NSLog(@"I'm at 82 on my code!");
-    
+    [activityIndicator stopAnimating];
+    [activityIndicator setHidden:YES];
 }
-
+//set the buttons stuff
+-(IBAction)setMaptype:(id)sender
+{
+    NSLog(@"just testing the buttons!");
+}
 @end
