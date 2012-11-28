@@ -10,12 +10,12 @@
 
 @implementation G2MapPoint
 -(id)initWithCoordinate:(CLLocationCoordinate2D)c
-                  title:(NSString *)str
+                  title:(NSString *)t
 {
     self = [super init];
     if (self) {
-        [self setCoordinate:c];
-        [self setTitle:str];
+        _coordinate = c;//hre we probabily are going to use CLL....Make to
+        [self setTitle:t];   //do it
     }
     return self;
 }

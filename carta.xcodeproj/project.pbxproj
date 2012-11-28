@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A907275B16667219001AF449 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A907275A16667219001AF449 /* Icon.png */; };
+		A907275D16667227001AF449 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A907275C16667227001AF449 /* Icon@2x.png */; };
 		A92DDF811663B911007D056A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A92DDF801663B911007D056A /* UIKit.framework */; };
 		A92DDF831663B911007D056A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A92DDF821663B911007D056A /* Foundation.framework */; };
 		A92DDF851663B911007D056A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A92DDF841663B911007D056A /* CoreGraphics.framework */; };
@@ -24,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A907275A16667219001AF449 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		A907275C16667227001AF449 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		A92DDF7C1663B911007D056A /* carta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = carta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A92DDF801663B911007D056A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A92DDF821663B911007D056A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -65,6 +69,8 @@
 		A92DDF711663B911007D056A = {
 			isa = PBXGroup;
 			children = (
+				A907275C16667227001AF449 /* Icon@2x.png */,
+				A907275A16667219001AF449 /* Icon.png */,
 				A92DDF861663B911007D056A /* carta */,
 				A92DDF7F1663B911007D056A /* Frameworks */,
 				A92DDF7D1663B911007D056A /* Products */,
@@ -98,9 +104,9 @@
 				A92DDF901663B911007D056A /* G2AppDelegate.m */,
 				A92DDF981663B911007D056A /* G2ViewController.h */,
 				A92DDF991663B911007D056A /* G2ViewController.m */,
-				A92DDF9B1663B911007D056A /* G2ViewController.xib */,
 				A92DDFAB1663C832007D056A /* G2MapPoint.h */,
 				A92DDFAC1663C832007D056A /* G2MapPoint.m */,
+				A92DDF9B1663B911007D056A /* G2ViewController.xib */,
 				A92DDF871663B911007D056A /* Supporting Files */,
 			);
 			path = carta;
@@ -177,6 +183,8 @@
 				A92DDF951663B911007D056A /* Default@2x.png in Resources */,
 				A92DDF971663B911007D056A /* Default-568h@2x.png in Resources */,
 				A92DDF9D1663B911007D056A /* G2ViewController.xib in Resources */,
+				A907275B16667219001AF449 /* Icon.png in Resources */,
+				A907275D16667227001AF449 /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +280,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "carta/carta-Prefix.pch";
 				INFOPLIST_FILE = "carta/carta-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -283,7 +293,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "carta/carta-Prefix.pch";
 				INFOPLIST_FILE = "carta/carta-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -307,6 +319,7 @@
 				A92DDFA21663B911007D056A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

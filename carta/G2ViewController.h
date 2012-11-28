@@ -16,7 +16,11 @@
     
     IBOutlet MKMapView *worldMap;  //hoew did we load tis one
     IBOutlet UITextField *locationField;
+    IBOutlet UIActivityIndicatorView *activityIndicator;
     
     
 }
+-(void)findLocation;
+-(void)foundLocation:(CLLocation *)loc;
+
 @end
