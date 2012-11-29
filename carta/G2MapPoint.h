@@ -15,4 +15,5 @@
 -(id)initWithCoordinate:(CLLocationCoordinate2D)c title:(NSString *)t;
 @property (nonatomic,readonly) CLLocationCoordinate2D coordinate;
 @property (nonatomic,copy) NSString *title;
+//@property (nonatomic,readonly) NSDate *dateCreated;
 @end

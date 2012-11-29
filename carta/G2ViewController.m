@@ -51,7 +51,7 @@
 {
     [activityIndicator startAnimating];
     //bronze challengue
-    [worldMap setMapType:MKMapTypeSatellite];
+    [worldMap setMapType:MKMapTypeStandard];
     [worldMap setShowsUserLocation:YES];
 }
 //
@@ -101,6 +101,27 @@ didUpdateUserLocation:(MKUserLocation *)userLocation
 //set the buttons stuff
 -(IBAction)setMaptype:(id)sender
 {
+    //this the let us access information about the sender thii is
+    //((UISegmentedControl *)sender) of this message
+    switch (((UISegmentedControl *)sender).selectedSegmentIndex)
+    {
+        case 0:
+        {
+            [worldMap setMapType:MKMapTypeStandard];
+            break;
+        }
+        case 1:
+        {
+            [worldMap setMapType:MKMapTypeHybrid];
+            break;
+        }
+        default:
+        {
+            [worldMap setMapType:MKMapTypeSatellite];
+            break;
+        }
+    }
     NSLog(@"just testing the buttons!");
+    NSLog(@"%@",self);
 }
 @end
