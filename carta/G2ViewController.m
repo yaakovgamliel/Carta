@@ -18,6 +18,7 @@
        locationManager = [[CLLocationManager alloc]init];
        [locationManager setDelegate:self];
        [locationManager setDesiredAccuracy:kCLLocationAccuracyBest];
+       [locationManager setHeadingFilter:kCLHeadingFilterNone];
         
         //[locationManager startUpdatingLocation];
         
@@ -25,7 +26,11 @@
     return self;
 }
 //
-
+-(void)locationManager:(CLLocationManager *)manager
+      didUpdateHeading:(CLHeading *)newHeading
+{
+    NSLog(@"Wuuuopah just finished with SCh %@!!!",newHeading);
+}
 
 -(void)locationManager:(CLLocationManager *)manager
              didUpdateToLocation:(CLLocation *)newLocation
@@ -78,6 +83,7 @@ didUpdateUserLocation:(MKUserLocation *)userLocation
 {
    // [activityIndicator startAnimating];
     [locationManager startUpdatingLocation];
+    [locationManager startUpdatingHeading];
     [locationField setHidden:NO];
 }
 -(void)foundLocation:(CLLocation *)loc

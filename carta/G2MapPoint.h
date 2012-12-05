@@ -11,7 +11,7 @@
 #import <MapKit/MapKit.h>
 @interface G2MapPoint : NSObject <MKAnnotation>
 {
-   // NSDate *dateCreated;
+  
 }
 +(id)mapPointTester;
 -(id)initWithCoordinate:(CLLocationCoordinate2D)c title:(NSString *)t;
