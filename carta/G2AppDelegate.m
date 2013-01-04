@@ -1,10 +1,3 @@
-//
-//  G2AppDelegate.m
-//  carta
-//
-//  Created by yaakov gamliel on 11/26/12.
-//  Copyright (c) 2012 G2think.io. All rights reserved.
-//
 
 #import "G2AppDelegate.h"
 

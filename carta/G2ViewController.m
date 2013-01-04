@@ -1,10 +1,3 @@
-//
-//  G2ViewController.m
-//  carta
-//
-//  Created by yaakov gamliel on 11/26/12.
-//  Copyright (c) 2012 G2think.io. All rights reserved.
-//
 
 #import "G2ViewController.h"
 #import "G2MapPoint.h"
@@ -20,7 +13,7 @@
        [locationManager setDesiredAccuracy:kCLLocationAccuracyBest];
        [locationManager setHeadingFilter:kCLHeadingFilterNone];
         
-        //[locationManager startUpdatingLocation];
+      //[locationManager startUpdatingLocation];
         
     }
     return self;
@@ -29,7 +22,7 @@
 -(void)locationManager:(CLLocationManager *)manager
       didUpdateHeading:(CLHeading *)newHeading
 {
-    NSLog(@"Wuuuopah just finished with SCh %@!!!",newHeading);
+    NSLog(@"Wuuuopah just finished with Silver Chanllenge  %@!!!",newHeading);
 }
 
 -(void)locationManager:(CLLocationManager *)manager
@@ -48,7 +41,7 @@
 -(void)locationManager:(CLLocationManager *)manager
     didFailWithError:(NSError *)error
 {
-    NSLog(@"Woo as Up!!!%@",error);
+    NSLog(@"We're getting any data!%@",error);
 }
 //
 //
@@ -100,14 +93,14 @@ didUpdateUserLocation:(MKUserLocation *)userLocation
     [locationField setHidden:NO];
     [locationManager stopUpdatingLocation];
     //debugging note
-    NSLog(@"I'm at 82 on my code!");
+    NSLog(@"I'm at 97 on my code!");
     [activityIndicator stopAnimating];
     [activityIndicator setHidden:YES];
 }
 //set the buttons stuff
 -(IBAction)setMaptype:(id)sender
 {
-    //this the let us access information about the sender thii is
+    //this the let us access information about the sender this is
     //((UISegmentedControl *)sender) of this message
     switch (((UISegmentedControl *)sender).selectedSegmentIndex)
     {

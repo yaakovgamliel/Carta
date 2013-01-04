@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A907275B16667219001AF449 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A907275A16667219001AF449 /* Icon.png */; };
-		A907275D16667227001AF449 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A907275C16667227001AF449 /* Icon@2x.png */; };
 		A92DDF811663B911007D056A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A92DDF801663B911007D056A /* UIKit.framework */; };
 		A92DDF831663B911007D056A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A92DDF821663B911007D056A /* Foundation.framework */; };
 		A92DDF851663B911007D056A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A92DDF841663B911007D056A /* CoreGraphics.framework */; };
@@ -23,11 +21,11 @@
 		A92DDFA81663BCE3007D056A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A92DDFA71663BCE3007D056A /* CoreLocation.framework */; };
 		A92DDFAA1663BD76007D056A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A92DDFA91663BD76007D056A /* MapKit.framework */; };
 		A92DDFAD1663C832007D056A /* G2MapPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = A92DDFAC1663C832007D056A /* G2MapPoint.m */; };
+		A970E59C1696C0970047FE8F /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A970E59B1696C0970047FE8F /* Icon.png */; };
+		A970E59E1696C09C0047FE8F /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A970E59D1696C09C0047FE8F /* Icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A907275A16667219001AF449 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
-		A907275C16667227001AF449 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		A92DDF7C1663B911007D056A /* carta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = carta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A92DDF801663B911007D056A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A92DDF821663B911007D056A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -48,6 +46,8 @@
 		A92DDFA91663BD76007D056A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		A92DDFAB1663C832007D056A /* G2MapPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = G2MapPoint.h; sourceTree = "<group>"; };
 		A92DDFAC1663C832007D056A /* G2MapPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = G2MapPoint.m; sourceTree = "<group>"; };
+		A970E59B1696C0970047FE8F /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		A970E59D1696C09C0047FE8F /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,8 +69,8 @@
 		A92DDF711663B911007D056A = {
 			isa = PBXGroup;
 			children = (
-				A907275C16667227001AF449 /* Icon@2x.png */,
-				A907275A16667219001AF449 /* Icon.png */,
+				A970E59D1696C09C0047FE8F /* Icon@2x.png */,
+				A970E59B1696C0970047FE8F /* Icon.png */,
 				A92DDF861663B911007D056A /* carta */,
 				A92DDF7F1663B911007D056A /* Frameworks */,
 				A92DDF7D1663B911007D056A /* Products */,
@@ -183,8 +183,8 @@
 				A92DDF951663B911007D056A /* Default@2x.png in Resources */,
 				A92DDF971663B911007D056A /* Default-568h@2x.png in Resources */,
 				A92DDF9D1663B911007D056A /* G2ViewController.xib in Resources */,
-				A907275B16667219001AF449 /* Icon.png in Resources */,
-				A907275D16667227001AF449 /* Icon@2x.png in Resources */,
+				A970E59C1696C0970047FE8F /* Icon.png in Resources */,
+				A970E59E1696C09C0047FE8F /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
